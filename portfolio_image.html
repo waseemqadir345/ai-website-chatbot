@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Customer Support Chatbot</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+  body {
+    background: linear-gradient(135deg, #7C3AED 0%, #EC4899 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+  }
+  .card {
+    background: #ffffff;
+    border-radius: 20px;
+    max-width: 760px;
+    width: 100%;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.3);
+    overflow: hidden;
+  }
+  .header {
+    background: linear-gradient(135deg, #7C3AED, #EC4899);
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+  }
+  .header .icon { font-size: 56px; }
+  .header h1 { font-size: 28px; margin: 12px 0 6px; }
+  .header p { font-size: 15px; opacity: 0.92; }
+  .badge {
+    display: inline-block;
+    background: rgba(255,255,255,0.2);
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-top: 14px;
+  }
+  .body { padding: 36px 40px; }
+  .section-title {
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #EC4899;
+    font-weight: 700;
+    margin-bottom: 14px;
+  }
+  .features {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+    margin-bottom: 30px;
+  }
+  .feature {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #FDF2F8;
+    padding: 14px 16px;
+    border-radius: 12px;
+    font-size: 14px;
+    color: #1f2937;
+  }
+  .feature .check { color: #16A34A; font-weight: bold; font-size: 18px; }
+
+  /* Chat preview */
+  .chat-preview {
+    background: #F9FAFB;
+    border: 1px solid #eee;
+    border-radius: 16px;
+    padding: 18px;
+    margin-bottom: 30px;
+  }
+  .chat-bar {
+    display: flex; align-items: center; gap: 8px;
+    font-weight: 600; color: #7C3AED; margin-bottom: 14px; font-size: 14px;
+  }
+  .msg {
+    padding: 10px 14px;
+    border-radius: 14px;
+    max-width: 78%;
+    font-size: 14px;
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  .msg.bot { background: #F3E8FF; color: #1f2937; }
+  .msg.user { background: #EC4899; color: white; margin-left: auto; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 8px; }
+  .tag {
+    background: #FCE7F3;
+    color: #DB2777;
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 13px;
+    font-weight: 600;
+  }
+  .footer {
+    background: #111827;
+    color: #fff;
+    text-align: center;
+    padding: 18px;
+    font-size: 13px;
+  }
+  .footer span { color: #F0ABFC; font-weight: 600; }
+</style>
+</head>
+<body>
+  <div class="card">
+    <div class="header">
+      <div class="icon">🤖</div>
+      <h1>AI Customer Support Chatbot</h1>
+      <p>ChatGPT-powered assistant that answers customers 24/7</p>
+      <div class="badge">🐍 Python · Flask · ChatGPT API · JavaScript</div>
+    </div>
+
+    <div class="body">
+      <div class="section-title">What It Does</div>
+      <div class="features">
+        <div class="feature"><span class="check">✓</span> Powered by ChatGPT API</div>
+        <div class="feature"><span class="check">✓</span> Trained on your business info</div>
+        <div class="feature"><span class="check">✓</span> Answers customers 24/7</div>
+        <div class="feature"><span class="check">✓</span> Embeds into any website</div>
+        <div class="feature"><span class="check">✓</span> Modern chat widget</div>
+        <div class="feature"><span class="check">✓</span> Mobile-friendly design</div>
+      </div>
+
+      <div class="section-title">Live Preview</div>
+      <div class="chat-preview">
+        <div class="chat-bar">💬 Support Assistant</div>
+        <div class="msg bot">Hi! 👋 How can I help you today?</div>
+        <div class="msg user">How much is a deep cleaning?</div>
+        <div class="msg bot">Our deep cleaning starts at $150. Would you like to book? 😊</div>
+      </div>
+
+      <div class="section-title">Tech &amp; Skills</div>
+      <div class="tags">
+        <span class="tag">Python</span>
+        <span class="tag">ChatGPT API</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Flask</span>
+        <span class="tag">API Integration</span>
+        <span class="tag">AI</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      Delivered by <span>M Waseem Q</span> · Python Developer &amp; Automation Specialist
+    </div>
+  </div>
+</body>
+</html>
